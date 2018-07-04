@@ -102,24 +102,19 @@ b {
     padding: 12px;
 }
 
-.cart {    
+.cart {
     float: right;
-    max-width: 100px;
-    height: 30px;   
-    margin-top: 50px;     
+    max-width: 95px;
+    margin-top: 55px;
 }
 
-.cart a {    
+.cart a {
     display: inline-block;
     position: relative;
     color: #000000;
     text-transform: uppercase;
     text-decoration: none;
     font-size: 14px;
-    padding-left: 5px;
-    padding-right: 0px;
-    padding-top: 7px;
-    padding-bottom: 5px;
 }
 
 .cart a::before {     
@@ -130,6 +125,11 @@ b {
     transform: translateY(-50%);
     left: -28px;
     padding-top: 2px; 
+}
+
+img {
+    margin-right: 10px;
+    vertical-align: text-top;
 }
 
 .main-nav a:hover, 
@@ -363,30 +363,14 @@ img.divide-3 {
     padding-left: 80px;
     padding-right: 80px;
 }
-
-.modal-content .name, 
-.modal-content .email {
+.column {
     display: inline-block;
     width: 216px;
-    margin-right: 0px;
     height: 34px;
-    padding-left: 14px;
-    padding-top: 0px;
 }
 
-.modal-content email {    
-    display: table;
-    width: 220px;
-    height: 34px;
-    font-size: 14px;
-    line-height: 14px;
-    padding-left: 14px;
-}
-
-.modal-content .user-text {
-    display: table;
-    width: 466px;
-    padding-right: 80px;
+.column2 {
+    float: right;
 }
 
 input {
@@ -398,6 +382,31 @@ input {
     border: solid 2px #d7dbdd;
     border-radius: 2px;
     box-sizing: border-box;
+    padding-left: 14px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 12px;
+}
+
+
+input.email, input.name {
+    width: 216px;
+}
+
+input.user-text {
+    width: 470px;
+    min-height: 110px;
+}
+input:hover {
+    border: solid 2px #a1a9ac;
+}
+
+input:active {
+    border: solid 2px #56befb;
+}
+
+.text {
+    margin-top: 30px;
 }
 
 .map {
@@ -447,9 +456,10 @@ input {
     margin-top: 24px;
     margin-bottom: 26px;
 }
+
 .send-btn {
     display: inline-block;
-    padding: 12px;
+    padding: 0px;
     border: 0px solid;
     border-radius: 4px;
     background-color: #FB565A;
@@ -458,9 +468,11 @@ input {
     text-align: center;
     text-transform: uppercase;
     width: 465px;
-    font-size: 12px;
+    font-family: "roboto";
     margin-top: 48px;
+    font-size: 12px;
     margin-bottom: 26px;
+    height: 38px;
 }
 
 p.name {
