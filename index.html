@@ -161,9 +161,23 @@
   
 
   <script type="text/javascript">
-  var link = document.querySelector(".modal-content")
-  </script>>
 
+    var link = document.querySelector(".contacts-btn.write-us");
+    var popup = document.querySelector(".modal-content");
+
+    link.addEventListener("click", function(event) {
+      event.preventDefault();
+      popup.classList.add("modal-content-show");
+    });
+
+    var close = document.querySelector(".modal-content-close");
+
+    close.addEventListener("click", function(event){
+      event.preventDefault();
+      close.classList.remove(".modal-content-show");
+    });
+
+  </script>
 
 
   </body>
