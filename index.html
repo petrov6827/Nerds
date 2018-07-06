@@ -160,22 +160,29 @@
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
   
 
-  <script type="text/javascript">
+  <script>
 
     var link = document.querySelector(".contacts-btn.write-us");
     var popup = document.querySelector(".modal-content");
+    var close = document.querySelector(".modal-content-close"); //закрыть форму
+    var login = popup.querySelector("[name=name]"); //фокус на имя
+    var form = popup.querySelector("form");
 
     link.addEventListener("click", function(event) {
       event.preventDefault();
       popup.classList.add("modal-content-show");
-    });
-
-    var close = document.querySelector(".modal-content-close");
+      login.focus();
+    });    
 
     close.addEventListener("click", function(event){
       event.preventDefault();
-      close.classList.remove(".modal-content-show");
+      close.classList.remove("modal-content-show");
     });
+
+    form.addEventListener("submit"), function() {
+      console.log("отправляем форму")
+      
+    }
 
   </script>
 
