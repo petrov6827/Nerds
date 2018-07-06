@@ -326,8 +326,27 @@ img.divide-3 {
     background-color: #ffffff;
 }
 
+
+@keyframes chponk {
+    0% { transform: : translateY(-2000px); }
+    70% { transform: : translateY(30px); }
+    90% { transform: : translateY(-10px); }
+    100% { transform: : translateY(0); }
+}
+
 .modal-content-show {
-    display: block;    
+    display: block;
+    animation: chponk 2.6s;
+}
+
+@keyframes shake {
+    0%, 100%                 { transform: translateX(0); }
+    10%, 30%, 50%, 70%, 90%  { transform: translateX(-10px); }
+    20%, 40%, 60%, 80%       { transform: translateX(10px); }
+}
+
+.modal-error {
+    animation: shake 0.6s;
 }
 
 .modal-content-close {
@@ -367,6 +386,7 @@ img.divide-3 {
     padding-left: 80px;
     padding-right: 80px;
 }
+
 .column {
     display: inline-block;
     width: 216px;
@@ -393,7 +413,7 @@ input {
 }
 
 
-input.email, input.name {
+input.email, input.username {
     width: 216px;
 }
 
@@ -429,7 +449,7 @@ input:active {
     padding-left: 20px;
 }
 
-.contact-info .name {
+.contact-info .username {
     padding: 10px;
     font-size: 16px;
     line-height: 30px;
@@ -479,7 +499,7 @@ input:active {
     height: 38px;
 }
 
-p.name {
+p.username {
     text-transform: uppercase;
     margin-top: 26px;
 }
