@@ -328,15 +328,15 @@ img.divide-3 {
 
 
 @keyframes chponk {
-    0% { transform: : translateY(-2000px); }
-    70% { transform: : translateY(30px); }
-    90% { transform: : translateY(-10px); }
-    100% { transform: : translateY(0); }
+    0% { transform: translateY(1000px); }
+    70% { transform: translateY(1630px); }
+    90% { transform: translateY(1590px); }
+    100% { transform: translateY(1600); }
 }
 
 .modal-content-show {
+    animation: chponk 0.6s;
     display: block;
-    animation: chponk 2.6s;
 }
 
 @keyframes shake {
@@ -397,19 +397,21 @@ img.divide-3 {
     float: right;
 }
 
-input {
+input,
+textarea {
     text-transform: uppercase;
     font-size: 12px;
     line-height: 18px;
-    color: rgb(0,0,0);
+    color: #000000;
     font-family: "Roboto";
     border: solid 2px #d7dbdd;
-    border-radius: 2px;
+    border-radius: 5px;
     box-sizing: border-box;
     padding-left: 14px;
     padding-top: 10px;
     padding-bottom: 10px;
     margin-top: 12px;
+
 }
 
 
@@ -417,16 +419,21 @@ input.email, input.username {
     width: 216px;
 }
 
-input.user-text {
+textarea.user-text {
     width: 470px;
     min-height: 110px;
 }
-input:hover {
+
+input:hover,
+textarea.user-text:hover {
     border: solid 2px #a1a9ac;
+    border-radius: 5px;
 }
 
-input:active {
+input:active,
+textarea.user-text:active {
     border: solid 2px #56befb;
+    border-radius: 5px;
 }
 
 .text {
