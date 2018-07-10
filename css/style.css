@@ -1,4 +1,4 @@
-
+part
 body {
     min-width: 880px;
     font-weight: 500;
@@ -278,6 +278,11 @@ img.before {
 
 .partners-item {
     display: inline-block;
+    opacity: 0.3;
+}
+
+.partners-item:hover {
+    opacity: 1;
 }
 
 .partners-item:first-child {
@@ -298,7 +303,7 @@ img.before {
 .partners-item:nth-child(3) {
     float: right;    
     width: 210px;    
-    margin-top: 45px;
+    margin-top: 30px;
     margin-right: 12px;
 }
 
@@ -310,7 +315,9 @@ img.divide-3 {
     padding-bottom: 85px;
 }
 
-.contacts {
+p.studio-name {
+    text-transform: uppercase;
+    margin-top: 30px;
 }
 
 .modal-content {
@@ -328,7 +335,7 @@ img.divide-3 {
 
 
 @keyframes chponk {
-    0% { transform: translateY(1000px); }
+    0% { transform: translateY(1300px); }
     70% { transform: translateY(1630px); }
     90% { transform: translateY(1590px); }
     100% { transform: translateY(1600); }
@@ -515,54 +522,90 @@ p.username {
     background: #d6494d;
 }
 
-.footer-social {
-    float: left;
-    position: relative;
-    top: 80px;
-    text-align: center;
+footer {
+  padding: 73px 0 78px 0;
 }
 
-.skidka {
-    display: inline-block;
-    float: right;
-    margin-top: 80px;
-    min-width: 500px;
+.social-icons {
+  font-size: 0;
 }
 
-.social-btn {display: inline-block;
-    border-radius: 63px;
-    width: 63px;
-    height: 63px;
-    margin-right: 27px;
-    z-index: 1;
-    font-size: 0px;
-    vertical-align: top;
-    text-decoration: none;
-    background: #e1e1e1 url(img/css_sprites.png) no-repeat center;
+.social-icons a {
+  font-size: 0;
+  display: inline-block;
+  width: 62px;
+  height: 62px;
+  background-color: #e1e1e1;
+  border-radius: 50%;
+  margin-right: 26px;
+  margin-top: 4px;
+  transition: background 0.6s ease;
 }
 
-.social-btn-vk {
-    background-position: -10px -50px;
+.social-icons a:last-child {
+  margin-right: 0;
 }
 
-.social-btn-fb {
-    background-position: ;  
+.social-icons a:hover {
+  background-color:#fb565a;
 }
 
-.social-btn-inst {
-    background-position: ;
+.social-icons a:active,
+.pagination a:active {
+  background-color:#d6494d;
+  box-shadow: inset 0 3px 0 0 rgba(0, 0, 0, 0.15);
 }
 
-.social-btn:hover {
-    background-color: #fb565a;
+.pagination a:active {
+  border: none;
+  line-height: 38px;
+  width: 38px;
 }
 
-.social-btn:active {
-    background-color: #d6494d;
+.social-icons a:before {
+  font-size: 23px;
+  margin-top: 19px;
+  margin-left: 20px;
+  color: #ffffff;
 }
 
-.footer .h2 {
-    position: absolute;
-    float: left;
-    margin-left: 300px;
+.friendship-title {
+  font-size: 36px;
+  margin-bottom: 14px;
+  font-weight: 500;
+  color: #000000;
+  letter-spacing: 0.011em;
+}
+
+.friendship-text {
+  font-size: 16px;
+}
+
+.col {
+  float: left;
+  padding-left: 80px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.row {
+  margin-left: -80px;
+}
+
+.row:after,
+.container:after,
+.range-control:before {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.col1 {
+  width: 33.33%;
+  margin-top: 10px;
+}
+
+.col2 {
+  width: 66.66%;
 }
