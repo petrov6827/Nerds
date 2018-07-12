@@ -142,11 +142,10 @@ b {
     color: #8f8f8f;
 }
 
-.header-bottom .left {
-    float: left;
+.slide1,
+.slide2, 
+.slide3 {    
     padding-top: 74px;
-    margin-right: 80px;
-    width: 380px;
     height: 195px;
 }
 
@@ -155,19 +154,23 @@ b {
 }
 
 .btn-know-more {
+    font-size: 12px;
+    line-height: 18px;
     width: 240px;
     padding: 12px;
     border-radius: 2px;
     background-color: #FB565A;
-    color: white;
+    color: rgba(255, 255, 255);
 }
 
-.header-bottom .right {
+.slide1-left {
+    width: 370px;
+    display: inline-block;
+}
+
+.slide1-right {
+    display: inline-block;
     float: right;
-    width: 340px;
-    height: 232px;
-    margin-top: 62px;
-    margin-right: 0px;
 }
 
 .services {
@@ -316,6 +319,15 @@ img.divide-3 {
     padding-bottom: 85px;
 }
 
+iframe {
+    z-index: 1;
+}
+
+img.mapjpg {
+    position: absolute;
+    z-index: 0;
+}
+
 p.studio-name {
     text-transform: uppercase;
     margin-top: 30px;
@@ -452,6 +464,7 @@ textarea.user-text:active {
     position: relative;
     display: flex;
     justify-content: center;
+    height: 420px;
 }
 
 .contacts-info {
@@ -462,6 +475,7 @@ textarea.user-text:active {
     margin-left: -304px;
     margin-top: 90px;
     padding-left: 20px;
+    z-index: 2;
 }
 
 .contact-info .username {
@@ -475,6 +489,7 @@ textarea.user-text:active {
     position: absolute;
     margin-top: 109px;
     margin-left: 354px;
+    z-index: 2;
 }
 
 .adress {
