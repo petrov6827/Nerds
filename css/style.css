@@ -31,6 +31,7 @@ b {
     font-size: 15px;
     line-height: 22px;
 }
+
 .container {
     width: 880px;
     margin: 0 auto;
@@ -40,12 +41,16 @@ b {
 .clearfix::after {
     content: "";
     display: table;
-    clear: both;
+    clear:
 }
 
-.page-header {
-    min-height: 436px;    
-    background-image: url("img/slider background") no-repeat;
+.header-container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+    background-color: #eeeeee;
+    min-height: 435px;
+    margin-bottom: 80px;
 }
 
 .header-logo {
@@ -144,9 +149,11 @@ b {
 
 .slide1,
 .slide2, 
-.slide3 {    
+.slide3 {
+    background-color: #eeeeee;    
     padding-top: 74px;
     height: 195px;
+    margin-top: 60px;
 }
 
 .header-bottom p {
