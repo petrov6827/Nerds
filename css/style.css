@@ -364,6 +364,7 @@ p.studio-name {
 .modal-content-show {
     animation: chponk 0.6s;
     display: block;
+    z-index: 2;
 }
 
 @keyframes shake {
@@ -635,3 +636,23 @@ footer {
   clear: both;
 }
 
+/*catalog*/
+.header-catalog {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+    background-color: #eeeeee;
+    min-height: 327px;
+    margin-bottom: 80px;
+}
+
+h1 {
+    font-size: 40px;
+    font-family: "Roboto";
+    font-weight: lighter;
+    text-transform: uppercase;
+    text-align: center;
+    vertical-align: center;
+    padding-top: 155px; 
+    line-height: 55px;
+}
