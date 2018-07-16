@@ -647,12 +647,13 @@ footer {
 }
 
 h1 {
+    margin-top: 0;
     font-size: 40px;
     font-family: "Roboto";
     font-weight: lighter;
     text-transform: uppercase;
+    padding: 10px;
     text-align: center;
-    vertical-align: center;
-    padding-top: 155px; 
-    line-height: 55px;
+    padding-top: 146px;
+    line-height: 42px;
 }
