@@ -147,15 +147,6 @@ b {
     color: #8f8f8f;
 }
 
-.slide1,
-.slide2, 
-.slide3 {
-    background-color: #eeeeee;    
-    padding-top: 74px;
-    height: 195px;
-    margin-top: 60px;
-}
-
 .header-bottom p {
     font-size: 16px;
 }
@@ -170,14 +161,54 @@ b {
     color: rgba(255, 255, 255);
 }
 
-.slide1-left {
-    width: 370px;
-    display: inline-block;
+.slide {    
+    position: absolute;
+    opacity: 0;
+    z-index: 0;    
 }
 
-.slide1-right {
+.slide1,
+.slide2, 
+.slide3 {
+    background-color: #eeeeee;    
+    padding-top: 74px;
+    height: 195px;
+    margin-top: 60px;
+}
+
+.slide1-left,
+.slide2-left,
+.slide3-left {
+    display: inline-block;
+    width: 470px;
+}
+
+.slide1-right,
+.slide2-right,
+.slide3-right {
     display: inline-block;
     float: right;
+}
+
+.slide1,
+.slide2,
+.slide3 {
+    display: hidden;
+}
+
+
+#slide-one:checked ~ .slide1,
+#slide-two:checked ~ .slide2,
+#slide-three:checked ~ .slide3 {
+    position: absolute;
+    opacity: 1;
+    z-index: 1;
+    transition: left .65s ease-out;
+}
+
+.radio-btns {
+    margin-top: 330px;
+    margin-left: 410px;
 }
 
 .services {
