@@ -34,14 +34,13 @@
 
         <div class="slider">        
           <div class="slides">
-            <div class="radio-btns">
+
+            <div class="overflow">
               <input id="slide-one" type="radio" name="slides" checked="">
               <input id="slide-two" type="radio" name="slides">
-              <input id="slide-three" type="radio" name="slides">
-            </div>
             
-            <div class="overflow">
-              
+                <input id="slide-three" type="radio" name="slides">
+
               <div class="slide slide1">
                 <div class="slide1-left">
                   <p><b>Долго, дорого, скрупулезно.</b></p>
@@ -52,7 +51,7 @@
                     <img src="img/computer.png" alt="Computer" width="338" height="231">
                 </div>
               </div>
-
+                
               <div class="slide slide2">
                 <div class="slide2-left">
                   <p><b>Любите ли вы математику, как любим ее мы?</b></p>
@@ -74,6 +73,7 @@
                   <img src="img/slide3.png" alt="Robot" width="333" height="320">
                 </div>
               </div>
+                
             </div>
           </div>
         </div>
@@ -208,7 +208,7 @@
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
   
   <script>
-
+    
     var link = document.querySelector(".contacts-btn.write-us");
     var popup = document.querySelector(".modal-content");
     var close = document.querySelector(".modal-content-close"); //закрыть форму
@@ -243,7 +243,8 @@
       }
     });
 
-  </script>  
+  </script>
+  
   </body>
 </html>  
 
